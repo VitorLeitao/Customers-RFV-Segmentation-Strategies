@@ -13,9 +13,9 @@ Esse dataset possui informações extremamente valiosas para a anlise de RFV, co
 ## 🗺️ Exploração inicial da base de dados
 De início não foi preciso muito trabalho em relação à pré processamento dos dados, a única inconsistência que estava presente na base era alguns missings na coluna de caixa postal, mas como esse notebook se trata de uma análise de RFV, é necessário apenas as features relacionados a identificação dos clientes, data e valor da compra, então apenas excluímos essa feature inconsistente.
 ### 📊insights iniciais
-1. - A maioria esmagadora das vendas se situa na faixa de U$20 a U$200. No entanto, é importante notar a presença significativa de outliers extremamente fortes, cujos valores alcançam impressionantes U$22.638, indicando uma ampla variedade nos montantes das vendas.
-- ![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/a043bfaa-2ea2-4e2e-8125-99affdfadb70)
-2. - A maioria esmagadora das vendas se situa na faixa de U$20 a U$200. No entanto, é importante notar a presença significativa de outliers extremamente fortes, cujos valores alcançam impressionantes U$22.638, indicando uma ampla variedade nos montantes das vendas.
-- ![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/a043bfaa-2ea2-4e2e-8125-99affdfadb70)
+1. A maioria esmagadora das vendas se situa na faixa de U$20 a U$200. No entanto, é importante notar a presença significativa de outliers extremamente fortes, cujos valores alcançam impressionantes U$22.638, indicando uma ampla variedade nos montantes das vendas.
+![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/a043bfaa-2ea2-4e2e-8125-99affdfadb70)
+2. A maioria esmagadora das vendas se situa na faixa de U$20 a U$200. No entanto, é importante notar a presença significativa de outliers extremamente fortes, cujos valores alcançam impressionantes U$22.638, indicando uma ampla variedade nos montantes das vendas.
+![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/a043bfaa-2ea2-4e2e-8125-99affdfadb70)
 
 
