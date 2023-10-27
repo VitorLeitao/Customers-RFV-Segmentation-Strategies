@@ -42,7 +42,7 @@ Nesta etapa, vamos simplesmente unir o conjunto de dados criado para analisar a 
 ![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/54ac5922-522e-4525-baa2-0b9c43b31ce1)
 ### 🔬Analisando o novo DataSet
 Inicialmente, não identificamos nenhuma correlação forte entre as características. A única correlação mínima encontrada foi entre Recência e Frequência, embora ainda seja bastante baixa. Apesar da sua baixa magnitude, esse dado revela que uma pequena parte dos clientes mantém uma relação inversamente proporcional entre frequência e recência. Ou seja, alguns clientes seguem a tendência de que, quanto mais frequentes são, mais recentes foram suas compras.A parte que deveria gerar preocupação, apesar de ser uma pequena parcela, são aqueles que estão no canto inferior direito do gráfico, que possuem baixa frequência e alta recência, ou seja, clientes que não compram frequentemente e não fazem compras há bastante tempo, são esses que tem a maior probabilidade de darem Churn:
-![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/9ad2ebf9-e9b0-44ef-9ff6-b0af941d60af)
+- ![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/9ad2ebf9-e9b0-44ef-9ff6-b0af941d60af)
 
 
 
