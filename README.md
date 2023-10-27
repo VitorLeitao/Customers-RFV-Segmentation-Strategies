@@ -33,7 +33,7 @@ Agora, vamos criar um novo conjunto de dados que incluirá informações sobre c
 - ![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/e24dccc7-9fe9-4f2b-8784-68d8fc9f78c6)
 ### 🔄**F**requência / 💰**V**alor
 - Nesta fase, estaremos criando um novo conjunto de dados, também agrupado por cliente, mas desta vez realizaremos a contagem de suas transações de compra, juntamente com o cálculo da média de seus gastos em cada compra. Dessa forma, teremos uma visão detalhada sobre a frequência de suas compras e o valor médio gasto em cada transação.
-![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/5bc25566-0a78-42ee-8630-9aea50fe8a6a)
+- ![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/5bc25566-0a78-42ee-8630-9aea50fe8a6a)
 - A frequência de compras exibe uma distribuição bastante regular, com apenas alguns outliers que elevam a média. Enquanto isso, o Valor Monetário apresenta numerosos outliers significativos, os quais explicam a disparidade entre a média e a mediana nos dados.
 - ![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/b6d6803f-39dc-4c4a-b56f-1e1161046465)
 - ![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/1c74d856-eb76-4b4d-8568-806ef2ac6d23)
@@ -43,6 +43,23 @@ Agora, vamos criar um novo conjunto de dados que incluirá informações sobre c
 ### 🔬Analisando o novo DataSet
 - Inicialmente, não identificamos nenhuma correlação forte entre as características. A única correlação mínima encontrada foi entre Recência e Frequência, embora ainda seja bastante baixa. Apesar da sua baixa magnitude, esse dado revela que uma pequena parte dos clientes mantém uma relação inversamente proporcional entre frequência e recência. Ou seja, alguns clientes seguem a tendência de que, quanto mais frequentes são, mais recentes foram suas compras.A parte que deveria gerar preocupação, apesar de ser uma pequena parcela, são aqueles que estão no canto inferior direito do gráfico, que possuem baixa frequência e alta recência, ou seja, clientes que não compram frequentemente e não fazem compras há bastante tempo, são esses que tem a maior probabilidade de darem Churn:
 - ![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/9ad2ebf9-e9b0-44ef-9ff6-b0af941d60af)
+
+## 🤖Segmentação com KMeans
+### 📉Visualização inicial da distribuição dos dados
+- ![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/0f7450a3-8929-4da1-b32b-c943f377474c)
+### 📏Método do cotovelo
+- ![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/3d21dfbc-12fc-4f06-a061-2f96acae2940)
+- Na teoria, a quantidade de cluster mais apropriada para esse conjunto de dados seria, possivelmente,  3, porém para o mundo dos negócios talvez seja uma segmentação com poucos grupos, o ideal seria testar algum valor entre 3~6
+### 🧪Modelagem e aplicação 
+- Após o escalonamento dos dados e a aplicação do GridSearchCV
+ para determinar os melhores parâmetros, aplicamos o KMeans no conjunto de dados e tivemos esses resultados: 
+- ![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/36a7862d-7693-429e-9cdc-35bb593a1451)
+- Visualização das informações de cada cluster:
+- ![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/e3c2c182-f701-4a22-b20d-012c206be1de)
+- Os insights derivados deste modelo revelam quatro grupos distintos: Clientes VIP, Possíveis Churn, Clientes Engajados e Clientes Regulares. Sendo os VIP aqueles com maior valor monetário em suas compras; possíveis churns aqueles que estão há muito tempo sem comprar; engajados aqueles com uma alta frequência; e regulares os que não tem nenhum atributo outlier, estando próximo da média em todos, ou seja, nem é um cliente extraordinário nem um possível churn, estando no meio termo. Para simplificar a interpretação, mapeamos os números dos clusters para suas categorias correspondentes, proporcionando uma compreensão mais intuitiva da segmentação dos clientes
+- ![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/ef2cbcde-96c5-459b-9012-f442c0639b1b)
+
+
 
 
 
