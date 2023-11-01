@@ -17,9 +17,7 @@ De início não foi preciso muito trabalho em relação à pré processamento do
 ![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/a043bfaa-2ea2-4e2e-8125-99affdfadb70)
 2. Analisando a segmentação geográfica, é possível identificar as regiões de maior valor total de venda na empresa, que opera exclusivamente nos Estados Unidos. As principais áreas de vendas estão localizadas na costa leste e oeste do país, com foco particular nos estados de Los Angeles e New York. 
 ![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/b501750b-7dae-43cb-a735-7db81269465f)
-3. A análise das preferências de categoria em diversas regiões dos Estados Unidos revelou um padrão consistente: a preferência dominante por artigos de escritório ('office supplies') é evidente em todas as regiões, enquanto as vendas de móveis ('furniture') e tecnologia ('technology') estão praticamente empatadas, apesar da ligeira vantagem de 'office supplies' na maioria dos casos. Talvez seja eficiente investimento em propaganda ou promoções para essas categorias menos procuradas.
-![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/07daa53f-eedc-4def-854f-dff71702778d)
-4.  As categorias com os maiores valores de mercado são furniture e tecnologia, mas em média Furniture tem um valor médio um pouco maior, apesar disso, os produtos de tecnologia tem uma escalabilidade maior em relação ao preço, tendo os outliers mais altos.
+3.  As categorias com os maiores valores de mercado são furniture e tecnologia, mas em média Furniture tem um valor médio um pouco maior, apesar disso, os produtos de tecnologia tem uma escalabilidade maior em relação ao preço, tendo os outliers mais altos.
 - Furniture: ![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/d5e003df-f3ee-4c28-97e9-d4edb13f7a71)
 - Technology: ![image](https://github.com/VitorLeitao/Customers-RFV-Segmentation-Strategies/assets/101846159/7bd1e8c7-3fb2-4a39-8d34-1309444fcc20)
   
